@@ -1,0 +1,246 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 140px;
+    background-color: #111414;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inria Sans", sans-serif; 
+    flex-wrap: nowrap;
+    border-bottom: 1px solid rgb(102, 96, 96); 
+    position: sticky; 
+    top: 0px;
+    margin-top: 0px;
+    z-index: 2;
+}
+
+header img{
+    width: 10%;
+    margin-left: 20px;
+}
+
+header nav ul{
+    padding-right: 30px;
+    color: whitesmoke;
+    list-style: none;
+    display: flex;
+    align-content: center;
+    gap: 50px;
+    font-size: 20px;       
+}
+
+.box-1{
+    box-shadow: 5px 5px rgb(102, 96, 96);
+    border: 2px solid rgb(134, 128, 128);
+    border-radius: 9px;
+}
+ 
+
+main .index{
+    height: 210vh;
+    background-color: #1F2324;
+    border-bottom: 1px solid whitesmoke; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.imagen19{
+    width: 100%;
+    margin: 20px;
+}
+
+.index{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto{
+    text-align: justify;  
+    margin-left: 80px;     
+    font-size: 17px; 
+    font-family: "Inria Sans", sans-serif; 
+    color: whitesmoke;
+}
+
+.descripcion{
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 80px;   
+    text-align: justify;
+    margin-bottom: 15px;
+    color: rgb(172, 168, 168);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.estilo1{
+    text-align: center;
+    font-family: "Inria Sans", sans-serif; 
+    padding-bottom: 15px;
+    margin-left: 30; 
+    color: rgb(209, 207, 207);
+}
+
+.estilo2{
+    text-align: center;
+    font-family: "Inria Sans", sans-serif; 
+    padding-top: 15px;
+    padding-left: 100;  
+    color: rgb(209, 207, 207);
+}
+
+.estilo3{
+    text-align: center;
+    font-family: "Inria Sans", sans-serif; 
+    font-size: 12px;
+    padding-left: 100;    
+    color: rgb(209, 207, 207);  
+}
+
+
+section{
+    height: 150px;
+    background-color: white;
+    font-family: "Quicksand", sans-serif;
+    border-bottom: 1px solid #706b6b3f;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    gap: 8px;
+}
+
+.redessociales{
+    display: flex;
+    
+}
+
+
+
+footer{
+    height: 100px;
+    background-color: #1F2324;
+    display: flex;
+    flex-direction: column;
+  
+   
+}
+
+footer ul li{
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+    padding-top: 20px;
+}
+
+/* Html Caracteristicas */
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    border-bottom: 1px solid rgb(102, 96, 96);
+}
+
+main .parrafos{
+    font-family: "Quicksand", sans-serif;
+    padding-top: 30px;
+    margin-left: 150px;
+    margin-right: 100px;
+    text-align: justify;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+main .titulos{
+    font-size: 30px;
+}
+
+/* ESTILOS DE MAIN EN COMPATIBILIDAD */
+
+.compatibilidad{
+    height: 200vh;
+    margin: 30px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 30%);
+    row-gap: 50px;
+    align-content: center;
+    text-align: center;
+    border-bottom: 1px solid rgb(112, 110, 110); 
+}
+
+main .textcomp{
+    text-align: justify;
+    font-family: "Inria Sans", sans-serif; 
+    font-size: 20;
+    display: flex;
+    justify-content: space-between;
+}
+
+main div img{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+main .img-dos, main .img-seis{
+    display: none;
+}
+
+
+/* estilos de footer */
+
+.sectioncomp{
+    text-align: center;
+}
+
+/* estilos de tablet */
+
+@media screen and (min-width:600px) {
+    .compatibilidad{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 30%);
+        column-gap: 10px;
+    }
+
+    .compatibilidad .img-doce{
+        grid-column: span 1;
+    }
+}
+
+/* estilos de desktop */
+
+@media screen and (min-width:1024px) {
+    main .img-dos, main .img-seis{
+        display: block;
+    }
+
+    .compatibilidad{
+        grid-template-columns: 4, 1fr;
+        grid-template-rows: 30% 30% 30%;
+    }
+}
+
+
+
+
+
+
+
+
